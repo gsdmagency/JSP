@@ -57,7 +57,7 @@ public class WebsiteFragment extends Fragment {
         ImageView imageView = view.findViewById(R.id.landingImage);
         Glide
                 .with(this)
-                .load("http://www.jolandiesphotography.co.za/jspapp/image8.jpg")
+                .load("http://www.jolandiesphotography.co.za/jspapp/websites.jpg")
                 .into(imageView);
         return view;
     }

@@ -66,8 +66,6 @@ public class GalleryAdapter extends BaseAdapter {
         Glide
                 .with(mContext)
                 .load(url)
-                .apply(new RequestOptions()
-                        .diskCacheStrategy(DiskCacheStrategy.NONE))
                 .into(holder.imageView);
         return convertView;
 

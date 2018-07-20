@@ -41,7 +41,7 @@ public class GalleryFragment extends Fragment {
 
 
     public GalleryFragment() {
-        // empty public constructor
+        // empty public constructors
     }
 
 
@@ -71,36 +71,7 @@ public class GalleryFragment extends Fragment {
                 "http://www.jolandiesphotography.co.za/jspapp/image17.jpg",
                 "http://www.jolandiesphotography.co.za/jspapp/image18.jpg",
                 "http://www.jolandiesphotography.co.za/jspapp/image19.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image20.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image21.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image22.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image23.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image24.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image25.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image26.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image27.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image28.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image29.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image30.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image31.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image32.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image33.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image34.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image35.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image36.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image37.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image38.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image39.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image40.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image41.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image42.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image43.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image45.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image46.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image47.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image48.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image49.jpg",
-                "http://www.jolandiesphotography.co.za/jspapp/image49.jpg"};
+                "http://www.jolandiesphotography.co.za/jspapp/image20.jpg"};
         gridView = view.findViewById(R.id.grdView);
         GalleryAdapter gridviewAdapter = new GalleryAdapter(getActivity(), myUrls);
         gridView.setAdapter(gridviewAdapter);

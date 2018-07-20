@@ -58,7 +58,7 @@ public class ApproachFragment extends Fragment {
         ImageView imageView = view.findViewById(R.id.landingImage);
         Glide
                 .with(this)
-                .load("http://www.jolandiesphotography.co.za/jspapp/image1.jpg")
+                .load("http://www.jolandiesphotography.co.za/jspapp/approach.jpg")
                 .into(imageView);
         return view;
     }
