@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Jolandie\'s Photography</string>
+
+    // About JSP
+    <string name="about_us_desc">My name is Jolandie, and I am the owner of Jolandie Photography. Photography started off as a hobby but soon became a passion of mine. I enjoy taking photos in the outdoors using natural light for weddings, maternity and family shoots.  My aim is to make memories last a lifetime by capturing the special moments and making you feel comfortable while doing it. I am privileged to have a great photographer on my team, Rowlene. Rowlene specialises in wedding and lifestyle photography. She has a good eye for both design and photography and loves to utilise her design skills while creating stunning images for our clients. </string>
+    <string name="about_us_title">About Jolandie\'s Photography</string>
+
+    //Our Approach
+    <string name="approach_title">Our Approach</string>
+    <string name="approach_desc">We are very passionate about what we do and this shines through in our images, we treat every wedding with true dedication and put all of ourselves into the process. We’d like to know you better and hear your story, so we can tell it in the most authentic way that would reflect your unique personalities and those feeling you have to each other.
+We’ve been fortunate enough to capture a lot of love stories and have quite a few tips up our sleeve, that we are happy to share with you to help you plan that perfect day. We’ll guide you through our process during our coffee date (or Skype session) and share all the valuable information you might need.
+Comes your wedding day, our team will be there to capture every moment for you to remember. Our style is all about those relaxed natural photos of real live moments, however we are always happy to guide you.</string>
+    <string name="about_love_title">It\'s all about love</string>
+    <string name="about_love_desc">It is all about love, isn’t it? One more reason we enjoy our work is the opportunity to observe and capture the celebration of genuine feelings between two people. We are here to make your memories speak for the years to come through visual recordings. Our team creates a relaxing atmosphere, allowing two loving hearts to enjoy the moment and celebrate their love, as they are meant to.</string>
+    <string name="trust_us_title">Trust us to do our thing…</string>
+    <string name="trust_us_desc">With over 30 weddings behind us, we are a creative team of visual storytellers and we treat each story as special. We take a chilled and relaxed approach to our photography which means we let your love do the talking. We will be there to document every significant moment of your wedding, from the couple getting ready through to the first dance, so there’s no need for long guides or lists. But, we would like to know if you have a special person on the guest list that needs our attention
+Any special requests are more than welcome and we will do our best to make your dream wedding a lasting memory.
+</string>
+
+    <string name="booking_title">Booking your wedding with us</string>
+    <string name="booking_desc">We like to treat every wedding and (and project in general) with full passion and inspiration. We work in our own developed style and want our clients to be on our wavelength. It is important that you like us as much as you like our work, as we are going to spend the whole day together. The best way to find that out is to catch up for a cup of coffee or a drink.
+Our bookings work on a ‘first in, first served’ basis. As our dates are limited, we do not take pencil bookings. A 30% non-refundable deposit and a signed contract is required to secure your date.
+Because every wedding is different, we’d like to know as much as possible about you and your big day to ensure that we are your perfect fit. Please fill out our short online Wedding Enquiry here.</string>
+
+
+    //Packages
+
+    <string name="bronze_title">Bronze Package @ R6 000</string>
+    <string name="bronze_desc"><ul>
+        <li>1 Photographer.</li>\n
+        <li>6 Hours Coverage.</li> \n
+        <li>Bride and Bridesmaids getting ready.</li> \n
+        <li>Detail photographs of reception hall and church.</li> \n
+        <li>Family and group photos.</li> \n
+        <li>An extended photo session with the bride,
+            groom and bridal party at location</li> \n
+        <li>All photographs are edited to ensure the highest quality,
+            black and white and special effects are done on photographs that is suitable.</li> \n
+        <li>10 Sneak-peak photos will be sent to you after 1 week.</li> \n
+        <li>A custom memory stick with 200-300 photographs are supplied within 6-8 weeks.</li> \n
+        <li>Travel: km’s charged at R4.50 p/km.</li>\n
+        <li>Any special requests are welcome.</li></ul></string>
+
+    <string name="silver_title">Silver Package @ R8 400</string>
+    <string name="silver_desc"><ul>
+        <li>Engagement shoot of half an hour in on location in Pretoria area(15km)(20 – 30 images).</li> \n
+        <li>8 Hours Coverage.</li> \n
+        <li>2 photographers.</li> \n
+        <li>Groom and Groomsmen getting ready</li>\n
+        <li>Bride and Bridesmaids getting ready</li> \n
+        <li>Detail photographs of reception hall and church.</li> \n
+        <li>Ceremony.</li>\n
+        <li>An extended photo session with the bride, groom and bridal party at location.</li> \n
+        <li>All photographs are edited to ensure the highest quality, black and white and
+            special effects are done on photographs that is suitable.</li> \n
+        <li>A custom memory stick with 400-500 photographs are supplied within 6-8 weeks.</li> \n
+        <li>15 Sneak-peak photos will be sent to you after 1 week.</li> \n
+        <li>First 50 km travel FREE, additional km’s charged at R4.50</li> p/km \n
+        <li>Any special requests are welcome.</li> </ul></string>
+    <string name="gold_title">Gold Package @ R10 800</string>
+    <string name="gold_desc"><ul>
+        <li>Engagement shoot of 1 hour on location in Pretoria area(20km) (30-40 images).</li> \n
+        <li>Full wedding photography.</li> \n
+        <li>10 Hours Coverage.</li> \n
+        <li>2 photographers.</li> \n
+        <li>Groom and Groomsmen getting ready.</li> \n
+        <li>Bride and Bridesmaids getting ready.</li> \n
+        <li>Detail photographs of reception hall and church.</li> \n
+        <li>All photographs are edited to ensure the highest quality, black and white and special
+            effects are done on photographs that is suitable.</li> \n
+        <li>A memory stick with 500-600 photographs are supplied within 6-8 weeks.</li> \n
+        <li>20 Sneak-peak photos will be sent to you after 1 week.</li> \n
+        <li>A “Fun studio” with props for use at reception.</li> \n
+        <li>20 page 30 x 30 Coffee table book.</li> \n
+        <li>Online gallery to share with friend and family.</li> \n
+        <li>First 100 km travel FREE, additional km’s charged at R4.50 p/km.</li> \n
+        <li>Any special requests are welcome.</li> </ul>
+</string>
+
+    <string name="platinum_title">Platinum Package @ R12 800</string>
+    <string name="platinum_desc"><ul>
+        <li>Wedding Website &amp; Wedding Stationary Package(20km) (Save R1’500).</li> \n
+        <li>Engagement shoot of 1 hour on location in Pretoria area (30-40 images).</li> \n
+        <li>Full wedding photography.</li> \n
+        <li>10 Hours Coverage.</li> \n
+        <li>2 photographers.</li> \n
+        <li>Groom and Groomsmen getting ready.</li> \n
+        <li>Bride and Bridesmaids getting ready.</li> \n
+        <li>Detail photographs of reception hall and church.</li> \n
+        <li>All photographs are edited to ensure the highest quality, black and white and
+            special effects are done on photographs that is suitable.</li> \n
+        <li>A memory stick with 500-600 photographs are supplied within 6-8 weeks.</li> \n
+        <li>20 Sneak-peak photos will be sent to you after 1 week.</li> \n
+        <li>A “Fun studio” with props for use at reception.</li> \n
+        <li>20 page 30 x 30 Coffee table book.</li> \n
+        <li>Online gallery to share with friend and family.</li> \n
+        <li>First 100 km travel FREE, additional km’s charged at R4.50 p/km.</li> \n
+        <li>Any special requests are welcome.</li></ul></string>
+
+    //Wedding Website
+    <string name="website_title">Wedding Websites &amp; Stationary</string>
+    <string name="website_desc">We have partnered up with GSDM Marketing and Design to offer our clients wedding
+websites and wedding stationary. We have a few samples below BUT all design work and websites are 100% customised, so we can do any theme or colour you like.</string>
+    <string name="design_package_title">Design package @ R3500 includes the following</string>
+    <string name="design_package_desc"><ul>
+        <li>Personalised Website – Fully Mobile Compatible.</li>\n
+        <li>Domain Name – eg. www.brideandgroom.co.za</li>\n
+        <li>1 Years free website hosting.</li>\n
+        <li>Online RSVP Form for your guests to confirm online.</li>\n
+        <li>Interactive Map to Venue.</li>\n
+        <li>Countdown Timer to Wedding Date.</li>\n
+        <li>Save the Date Design.</li>\n
+        <li>Wedding Invite Design.</li>\n
+        <li>Design of:</li>\n
+        </ul>
+
+    <ul style="list-style-type:square" >
+            <li>Table Menu</li>\n
+            <li>Table Numbers</li>\n
+            <li>Name Cards</li>\n
+            <li>Seating Chart</li>\n
+            <li>Ceremony Info Sheet</li></ul></string>
+
+    //FAQ
+    <string name="style_title">What is your style?</string>
+    <string name="style_desc">Our style could be described as artistic storytelling. We combine our creative approach with relaxed natural shooting where no moment or detail is neglected. With our experience in a variety of photographic fields, our style is influenced by fine-art and fashion photography. We love using unique perspectives and angles, and always looking for interesting light and backgrounds to turn your wedding portraits into a work of art.</string>
+    <string name="how_long_title">What is your style?</string>
+    <string name="how_long_desc">Usually we need at least 1-1.5 hours for a photoshoot with the couple or bridal party, though timing does depend on your unique requirements. We would love to have an opportunity to change locations to ensure that you have the perfect set of images.
+ Below are our guides on the duration of the wedding day shoots, so you can work your day schedule around these: \n
+        <ul><li>Preparation Shots – 1 hour – 1.5 hours</li> \n
+        <li>Couples session – 1 hour to 1.5 hours (before or after the ceremony)</li> \n
+        <li>Family Formal Portraits – 15-45 minutes (allow 5 min per 1 group)</li> \n<li>Bridal Party (Optional) – 30 minutes</li></ul></string>
+    <string name="time_title">When is the best time to do the couples shoot?</string>
+    <string name="time_desc">We encourage the couple shoot to be after your ceremony. Shooting after the ceremony could allow you to take advantage of the setting sun and its beautiful softer light while the guests enjoy a coctail. Set at least an hour aside just for the couple at a location. Add another
+30 minutes for bridal party shots.</string>
+    <string name="shot_list_title">Do we need to give you a shot list?</string>
+    <string name="shot_list_desc">With our Gold wedding package, you can rest assured that we will be there to capture every important moment of your big day, so no long shot list is needed. However, if you have particular preferences or a special person on the guest list that needs our attention, please do tell us.</string>
+    <string name="how_many_title">How many photos do we receive?</string>
+    <string name="how_many_desc">The amount of photographs depends on the package of your choice. All of our photographs are edited to assure the highest quality.</string>
+    <string name="camera_title">Can we have other cameras at our wedding?</string>
+    <string name="camera_desc">It is up to you. We all live in a digital world where everyone has a camera or a smartphone. We will do our best to work around people jumping in front of our cameras, but we would appreciate that your guests are respectful to our work process. We want you and your guests to enjoy your wedding day fully and when guests are constantly taking pictures or on their
+phones, they’re missing out on the wedding itself.</string>
+    <string name="see_title">How long do we wait to see our photos?</string>
+    <string name="see_desc">At Jolandie’s Photography, our standards are high and we take the editing process seriously. We take great care to ensure that all your edited photographs are delightful. Our digital processing takes approximately 6–8 weeks, but you will get a “sneak peak” of your big day no later than 10 days after your wedding.</string>
+    <string name="photographers_title">Why do we need 2 Photographers?</string>
+    <string name="photographers_desc">We are a tight-knit team and we work our magic together, covering two angles at the same time and ensuring that we have every moment captured. A huge point of difference is that we can be with both counterparts on the morning at two different locations.</string>
+    <string name="publish_title">Are you going to publish our photos on your website or social media?</string>
+    <string name="publish_desc">We love our work and perceive it as an opportunity to express our talents and skills. As we are working on a limited number of weddings per season and every wedding embodies a point of our creative interests, we give preference to the weddings we can share and talk about</string>
+    <string name="rains_title">What happens if it rains?</string>
+    <string name="rains_desc">They say that if it is raining on your wedding day you will surely have a happy marriage and your love will never fade away. As for us, it is another opportunity to express our creativity. We always have a plan B.</string>
+    <string name="editing_title">What does your editing involve?</string>
+    <string name="editing_desc">We like to keep things as natural as possible.</string>
+    <string name="rights_title">What rights do I have to the digital files?</string>
+    <string name="rights_desc">You have the right to print and share your images whenever you want, wherever you want. However, you may not sell your images for profit, use them for any commercial purpose or publish your images without our written consent. If your wedding vendors are requesting some images to use for their advertising, please, send them our way, so we can provide the best solution to their needs.</string>
+    <string name="travel_title">Do you travel?</string>
+    <string name="travel_desc">Sure! Location Wedding are exciting and beautiful and gives us the chance to be even more creative.</string>
+    <string name="meal_title">Do you require a meal at the reception?</string>
+    <string name="meal_desc">As all human beings, we need to eat to perform well. We’d appreciate if you provide us with a hot meal when wedding coverage longer than 6 hours. If the meal is not provided, we would need to leave the venue for up to an hour.</string>
+    <string name="pencil_bookings_title">Do you take pencil bookings?</string>
+    <string name="pencil_bookings_desc">Unfortunately, we do not. We have only a limited number of dates available so all the bookings work on a ‘first in, first served’ basis.</string>
+    <string name="how_book_title">How can we book you?</string>
+    <string name="how_book_desc">We would love to meet you in person and have the chance to get to know each other. If you don’t live in Pretoria, we can use Skype. To secure your date, a 30% deposit and a signed contract is required. The final payment is due two weeks prior to your wedding.</string>
+    <string name="cancelled_title">If our wedding is cancelled, can we receive our deposit back?</string>
+    <string name="cancelled_desc">Unfortunately, no. Deposits are used to reserve your date. Once we’ve reserved your date we are unable to accept new clients for that date.</string>
+    <string name="raw_files_title">Do you provide raw files?</string>
+    <string name="raw_files_desc">We provide you with a set of fully edited high resolution images. We pride ourselves in delivering the best quality product and our editing process is a big part of it – that’s why we do not provide any unprocessed RAW files or JPEGS to our clients.</string>
+    <string name="btn_send">Send</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp" />
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerlayout">
+        <FrameLayout
+            android:id="@+id/homeFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/fragment_home"/>
+        </FrameLayout>
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemTextColor="@android:color/white"
+            app:itemBackground="@android:color/transparent"
+            android:background="@drawable/borders_nav"
+            android:id="@+id/navview" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

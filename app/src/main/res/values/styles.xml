@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Headings">
+        <item name="android:textColor">@color/headings</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">10dp</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/calendar_active_month_bg</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/calendar_active_month_bg</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/calendar_active_month_bg</item>
+    </style>
+
+</resources>
