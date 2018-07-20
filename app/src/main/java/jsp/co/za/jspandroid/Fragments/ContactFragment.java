@@ -141,7 +141,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
 
         try {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                    "mailto", "inf@jolandiesphotography.co.za", null));
+                    "mailto", "info@jolandiesphotography.co.za", null));
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
             emailIntent.putExtra(Intent.EXTRA_TEXT, body);
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
@@ -186,7 +186,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
     }
 
     public static boolean validate(TextView name, TextView email, TextView phone, TextView wedding, TextView message) {
-        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+       // String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+\\.+[a-z]+";
         if (name.getText().toString().isEmpty()) {
             name.setError("Please fill text");
             return false;
@@ -201,9 +201,6 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
             return false;
         } else if (message.getText().toString().isEmpty()) {
             message.setError("Please fill text");
-            return false;
-        } else if (!email.getText().toString().matches(emailPattern)) {
-            email.setError("Not valid email");
             return false;
         } else {
             return true;
