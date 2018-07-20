@@ -21,7 +21,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.github.florent37.runtimepermission.RuntimePermission;
@@ -46,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean isRotation = false;
     String title = "";
     int value=0;
+    ImageView imageView=null;
+    LinearLayout layout_AboutUs=null;
 
     @Override
     protected void onStart() {
@@ -70,10 +75,11 @@ public class MainActivity extends AppCompatActivity {
                 //the list of denied permissions
             }
         });
-        ImageView imageView=findViewById(R.id.landingImage);
+        imageView=findViewById(R.id.landingImage);
+        layout_AboutUs=findViewById(R.id.lnlAboutUs);
         Glide
                 .with(this)
-                .load("http://www.jolandiesphotography.co.za/jspapp/image7.jpg")
+                .load("http://www.jolandiesphotography.co.za/jspapp/about.jpg")
                 .into(imageView);
 
         // you need to open setting manually if you really need it
@@ -94,7 +100,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 item.setChecked(true);
+                imageView.setVisibility(View.INVISIBLE);
+                layout_AboutUs.setVisibility(View.INVISIBLE);
                 switch (item.getItemId()) {
+
                     case R.id.nav_home:
                         title = "About";
                         setFragment(new HomeFragment());
