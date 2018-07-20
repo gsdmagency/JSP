@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="content">#a09fb4 </color>
-    <color name="headings">#333333</color>
-    <color name="content_">#555555</color>
+    <color name="headings">#000000</color>
+    <color name="content_">#000000</color>
     <color name="calendar_highlighted_day_bg">#8079AD</color>
     <color name="calendar_active_month_bg">#8079AD</color>
 </resources>
