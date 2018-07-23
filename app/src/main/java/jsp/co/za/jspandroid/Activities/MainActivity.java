@@ -25,10 +25,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.github.florent37.runtimepermission.RuntimePermission;
 import com.github.florent37.runtimepermission.callbacks.PermissionListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.List;
 
@@ -141,6 +145,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+
+        //Firebase
+        FirebaseMessaging.getInstance().subscribeToTopic("JSP_news")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                        if (!task.isSuccessful()) {
+                            String msg = "Failed to register";
+                            Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
         
 
 
