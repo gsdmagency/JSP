@@ -13,6 +13,13 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
         <activity android:name=".Activities.LandingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +28,12 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".Helper.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
         <activity android:name=".Activities.MainActivity">
         </activity>
     </application>
