@@ -41,20 +41,25 @@ import jsp.co.za.jspandroid.Fragments.ContactFragment;
 import jsp.co.za.jspandroid.Fragments.FAQFragment;
 import jsp.co.za.jspandroid.Fragments.GalleryFragment;
 import jsp.co.za.jspandroid.Fragments.HomeFragment;
+import jsp.co.za.jspandroid.Fragments.NotificationFragment;
 import jsp.co.za.jspandroid.Fragments.WebsiteFragment;
 import jsp.co.za.jspandroid.Fragments.WeddingFragment;
+import jsp.co.za.jspandroid.Helper.Interface;
+import jsp.co.za.jspandroid.Helper.MyDB;
+import jsp.co.za.jspandroid.Helper.Utils;
 import jsp.co.za.jspandroid.R;
 
 import static com.github.florent37.runtimepermission.RuntimePermission.askPermission;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     public DrawerLayout mDrawer;
-    public NavigationView navigationView;
+    public static NavigationView navigationView;
     public boolean isRotation = false;
     String title = "";
-    int value=0;
-    ImageView imageView=null;
-    LinearLayout layout_AboutUs=null;
+    ImageView imageView = null;
+    LinearLayout layout_AboutUs = null;
+    int notification;
+    MyDB db;
 
     @Override
     protected void onStart() {
@@ -66,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         askPermission(this, Manifest.permission.CALL_PHONE).ask(new PermissionListener() {
             @Override
             public void onAccepted(RuntimePermission runtimePermission, List<String> accepted) {
@@ -79,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
                 //the list of denied permissions
             }
         });
-        imageView=findViewById(R.id.landingImage);
-        layout_AboutUs=findViewById(R.id.lnlAboutUs);
+        imageView = findViewById(R.id.landingImage);
+        layout_AboutUs = findViewById(R.id.lnlAboutUs);
         Glide
                 .with(this)
                 .load("http://www.jolandiesphotography.co.za/jspapp/about.jpg")
@@ -98,8 +101,20 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("About");
+        db = new MyDB(this);
+        notification = Utils.getPreInt(this, "notification");
+        if (notification == 1) {
+            Utils.clearPreInt(this, "notification");
+            setFragment(new NotificationFragment());
+        }
+
 
         navigationView.inflateMenu(R.menu.navmenu);
+        if (db.selectRecords() != null && navigationView != null) ;
+        navigationView.getMenu().findItem(R.id.nav_notification).setTitle("Notification " + db.selectRecords().getCount());
+
+
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -139,13 +154,18 @@ public class MainActivity extends AppCompatActivity {
                         title = "Contact Us";
                         setFragment(new ContactFragment());
                         break;
+                    case R.id.nav_notification:
+                        title = "Notification";
+                        setFragment(new NotificationFragment());
+                        break;
                 }
+                if (db.selectRecords() != null && navigationView != null) ;
+                navigationView.getMenu().findItem(R.id.nav_notification).setTitle("Notification " + db.selectRecords().getCount());
                 mDrawer.closeDrawers();
                 return true;
             }
 
         });
-
 
 
         //Firebase
@@ -161,8 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
-        
-
 
 
     }
@@ -173,21 +191,6 @@ public class MainActivity extends AppCompatActivity {
         //setFragment(new HomeFragment());
     }
 
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-
-        super.onConfigurationChanged(newConfig);
-        isRotation = true;
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            //your code
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            //your code
-            value=1;
-
-        }
-
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -239,17 +242,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo("com.facebook.katana", 0);
             if (applicationInfo.enabled) {
-                // http://stackoverflow.com/a/24547437/1048340
                 uri = Uri.parse("fb://facewebmodal/f?href=" + "https://www.facebook.com/jolandiesphotography");
             }
         } catch (PackageManager.NameNotFoundException ignored) {
         }
         return new Intent(Intent.ACTION_VIEW, uri);
-//        try {
-//            context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
-//            this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/251432025291048")));
-//        } catch (Exception e) {
-//           this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/jolandiesphotography")));
-//        }
+
     }
+
+
 }
