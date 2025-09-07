@@ -28,8 +28,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.github.florent37.runtimepermission.RuntimePermission;
-import com.github.florent37.runtimepermission.callbacks.PermissionListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -49,7 +47,7 @@ import jsp.co.za.jspandroid.Helper.MyDB;
 import jsp.co.za.jspandroid.Helper.Utils;
 import jsp.co.za.jspandroid.R;
 
-import static com.github.florent37.runtimepermission.RuntimePermission.askPermission;
+// Removed runtime-permission library usage for this prototype
 
 public class MainActivity extends AppCompatActivity{
     public DrawerLayout mDrawer;
@@ -71,17 +69,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        askPermission(this, Manifest.permission.CALL_PHONE).ask(new PermissionListener() {
-            @Override
-            public void onAccepted(RuntimePermission runtimePermission, List<String> accepted) {
-
-            }
-
-            @Override
-            public void onDenied(RuntimePermission runtimePermission, List<String> denied, List<String> foreverDenied) {
-                //the list of denied permissions
-            }
-        });
+        // Permission library removed; CALL_PHONE permission remains in manifest for legacy code
         imageView = findViewById(R.id.landingImage);
         layout_AboutUs = findViewById(R.id.lnlAboutUs);
         Glide
